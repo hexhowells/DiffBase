@@ -1,0 +1,108 @@
+@font-face {
+	font-family: 'poppins600';
+	src: url('fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'poppins300';
+	src: url('fonts/Poppins/Poppins-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'sourcecodepro400';
+	src: url('fonts/Source_Code_Pro/SourceCodePro-Regular.ttf') format('truetype');
+}
+
+.title {
+	font-family: poppins600;
+	padding: 5px 0px 5px 10px;
+}
+
+.title h1 {
+	color: black;
+	font-size: 40px;
+	display: inline;
+}
+
+.title p {
+	font-family: poppins300;
+}
+
+
+.body {
+	margin: auto;
+	padding: 0px 10px 30px 10px;
+}
+
+.code-header {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 20px;
+	font-family: poppins600;
+}
+
+.code-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 20px;
+	height: 400px;
+	padding-bottom: 40px;
+}
+
+.code-container textarea {
+	resize: none;
+	font-family: sourcecodepro400;
+	border-color: #cccccc;
+}
+
+.code-diff-header {
+	font-family: poppins600;
+}
+
+.code-diff-body {
+	height: 30px;
+	width: 100%;
+	border-color: #cccccc;
+	border-style: solid;
+	border-width: 1px;
+	font-family: sourcecodepro400;
+	font-size: 13px;
+	/*table-layout: fixed*/
+}
+
+
+@media (max-width:  600px) {
+	.code-diff-body {
+		font-size: 12px;
+	}
+
+	.title {
+		text-align: center;
+	}
+}
+
+.code-diff-body td {
+	max-width: 100px;
+	word-wrap: break-word;
+	vertical-align: top;
+	white-space: pre-wrap;
+}
+
+.code-diff-body th {
+	vertical-align: top;
+	width: 10px;
+	padding-right: 8px;
+}
+
+
+.added {
+	background-color: #9ff5b7;
+}
+
+.removed {
+	background-color: #faafc1;
+}
+
+.space {
+	background-color: #f5f5f5;
+}
